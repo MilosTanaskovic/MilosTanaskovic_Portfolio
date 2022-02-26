@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import ContactLink from '../components/CustomLinks/ContactLink';
 import PowerButton from '../components/Buttons/PowerButton';
@@ -9,6 +9,7 @@ import WorkLink from '../components/CustomLinks/WorkLink';
 import AboutLink from '../components/CustomLinks/AboutLink';
 import SkillsLink from '../components/CustomLinks/SkillsLink';
 import CustomCenterButton from '../components/Buttons/CustomCenterButton';
+import DarkDiv from '../components/Containers/DarkDiv';
 
 const MainContainer = styled.div`
     background: ${props => props.theme.body};
@@ -40,13 +41,15 @@ const BottomBar = styled.div`
 `;
 
 export default function Main() {
+    const [click, setClick] = useState(false);
     return (
         <MainContainer>
             <Container>
+                <DarkDiv click={click} />
                 <PowerButton />
                 <Logo />
                 <SocialIcons />
-                <CustomCenterButton />
+                <CustomCenterButton click={click} setClick={setClick} />
                 <ContactLink />
                 <BlogLink />
                 <WorkLink />

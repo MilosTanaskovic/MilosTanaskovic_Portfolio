@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled, { keyframes } from 'styled-components'
-import { YinYangSvg } from '../AllSvgs'
+import { SaltSvg, YinYangSvg } from '../AllSvgs'
 
 const rotate = keyframes`
     from{
@@ -18,27 +18,30 @@ const CustomCenterButtonWrapper = styled.button`
     align-items: center;
 
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: ${props => props.click ? '85%' : '50%'};
+    left: ${props => props.click ? '92%' : '50%'};
     transform: translate(-50%, -50%);
     border: none;
     outline: none;
     background-color: transparent;
     cursor: pointer;
+    transition: all 1s ease;
 
     &>:first-child {
-        animation: ${rotate} infinite 1.5s linear;
+        animation: ${rotate} infinite 2.5s linear;
     }
 
     &>:last-child {
+        display: ${props => props.click ? 'none' : 'inline-block'};
         padding-top: 1rem;
     }
 `;
 
-export default function CustomCenterButton() {
+export default function CustomCenterButton({click, setClick}) {
+    const handleClick = () => setClick(!click);
     return (
-        <CustomCenterButtonWrapper>
-            <YinYangSvg width={200} height={200} fill='currentColor' />
+        <CustomCenterButtonWrapper click={click}>
+            <SaltSvg onClick={() => handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' />
             <span>click here</span>
         </CustomCenterButtonWrapper>
     )
