@@ -1,6 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
+import ContactLink from '../components/CustomLinks/ContactLink';
 import PowerButton from '../components/Buttons/PowerButton';
+import SocialIcons from '../components/Icons/SocialIcons';
+import Logo from '../components/Logo/Logo';
+import BlogLink from '../components/CustomLinks/BlogLink';
+import WorkLink from '../components/CustomLinks/WorkLink';
+import AboutLink from '../components/CustomLinks/AboutLink';
+import SkillsLink from '../components/CustomLinks/SkillsLink';
+import CustomCenterButton from '../components/Buttons/CustomCenterButton';
 
 const MainContainer = styled.div`
     background: ${props => props.theme.body};
@@ -20,11 +28,32 @@ const Container = styled.div`
     padding: 2rem;
 `;
 
+const BottomBar = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+`;
+
 export default function Main() {
     return (
         <MainContainer>
             <Container>
                 <PowerButton />
+                <Logo />
+                <SocialIcons />
+                <CustomCenterButton />
+                <ContactLink />
+                <BlogLink />
+                <WorkLink />
+                <BottomBar>
+                    <AboutLink />
+                    <SkillsLink />
+                </BottomBar>
             </Container>
         </MainContainer>
     )
