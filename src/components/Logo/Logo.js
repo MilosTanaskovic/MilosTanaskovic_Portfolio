@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import { darkTheme } from '../Themes';
 
 const LogoWrapper = styled.h1`
     display: inline-block;
-    color: ${props => props.theme.text};
+    color: ${props => props.color === 'dark' ? darkTheme.text : darkTheme.body};
     font-family: 'Pacifico', cursive;
 
     position: fixed;
@@ -12,9 +13,9 @@ const LogoWrapper = styled.h1`
     z-index: 3;
 `;
 
-export default function Logo() {
+export default function Logo(props) {
     return (
-        <LogoWrapper>
+        <LogoWrapper color={props.theme}>
             MT
         </LogoWrapper>
     )

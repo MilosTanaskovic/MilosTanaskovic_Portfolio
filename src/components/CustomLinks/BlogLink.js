@@ -1,4 +1,5 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
@@ -15,9 +16,12 @@ const BlogLinkWrapper = styled(NavLink)`
 export default function BlogLink() {
     return (
         <BlogLinkWrapper to='/blog'>
-            <h2>
+            <motion.h2
+                whileHover={{scale:1.1}}
+                whileTap={{scale:0.9}}
+            >
                 Blog
-            </h2>    
+            </motion.h2>    
         </BlogLinkWrapper>
     )
 }

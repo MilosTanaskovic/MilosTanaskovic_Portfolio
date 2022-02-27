@@ -10,6 +10,7 @@ import AboutLink from '../components/CustomLinks/AboutLink';
 import SkillsLink from '../components/CustomLinks/SkillsLink';
 import CustomCenterButton from '../components/Buttons/CustomCenterButton';
 import DarkDiv from '../components/Containers/DarkDiv';
+import HomeIntro from '../components/Intros/HomeIntro';
 
 const MainContainer = styled.div`
     background: ${props => props.theme.body};
@@ -44,20 +45,21 @@ export default function Main() {
     const [click, setClick] = useState(false);
     return (
         <MainContainer>
+        <DarkDiv click={click} />
             <Container>
-                <DarkDiv click={click} />
                 <PowerButton />
-                <Logo />
-                <SocialIcons />
+                <Logo theme={click ? 'dark' : 'light'} />
+                <SocialIcons theme={click ? 'dark' : 'light'} />
                 <CustomCenterButton click={click} setClick={setClick} />
                 <ContactLink />
                 <BlogLink />
-                <WorkLink />
+                <WorkLink click={click} />
                 <BottomBar>
-                    <AboutLink />
+                    <AboutLink click={click} />
                     <SkillsLink />
                 </BottomBar>
             </Container>
+            {click ? <HomeIntro click={click} /> : null}
         </MainContainer>
     )
 }

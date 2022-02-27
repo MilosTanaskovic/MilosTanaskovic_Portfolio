@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components'
 
@@ -14,9 +15,12 @@ const ContactLinkWrapper = styled(NavLink)`
 export default function ContactLink() {
     return (
         <ContactLinkWrapper target='_blank' to={{pathname:'mailto:milos@tanaskovic.se'}}>
-            <h2>
+            <motion.h2
+                whileHover={{scale:1.1}}
+                whileTap={{scale:0.9}}
+            >
                 Say hi 🙋🏻‍♂️
-            </h2>    
+            </motion.h2>    
         </ContactLinkWrapper>
     )
 }

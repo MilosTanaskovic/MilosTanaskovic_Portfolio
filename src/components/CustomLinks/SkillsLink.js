@@ -1,4 +1,5 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
@@ -11,9 +12,12 @@ const SkillsLinkWrapper = styled(NavLink)`
 export default function SkillsLink() {
     return (
         <SkillsLinkWrapper to='/skills'>
-            <h2>
+            <motion.h2
+                whileHover={{scale:1.1}}
+                whileTap={{scale:0.9}}
+            >
                 My Skills.
-            </h2>    
+            </motion.h2>    
         </SkillsLinkWrapper>
     )
 }
