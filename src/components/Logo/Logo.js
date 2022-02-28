@@ -16,7 +16,7 @@ const LogoWrapper = styled.h1`
 export default function Logo(props) {
     return (
         <LogoWrapper color={props.theme}>
-            MT
+            Milos T.
         </LogoWrapper>
     )
 }
