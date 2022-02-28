@@ -25,13 +25,16 @@ const Power = styled.button`
     cursor: pointer;
 
     &:hover {
-        background-color: rgba(172, 39, 245, 0.4);
+        background-color: rgba(97, 43, 220, 0.4);
         box-shadow: 0 0 8px 6px rgba(172, 39, 245, 0.2);
     }
 
     &>*:first-child{
         text-decoration: none;
         color: inherit;
+    }
+    &>*:first-child:hover{
+        color: white;
     }
 `;
 
