@@ -1,5 +1,5 @@
 // work data
-export const Work = [
+export const workData = [
     {
         id:1,
         name:"Agency Landing Page",

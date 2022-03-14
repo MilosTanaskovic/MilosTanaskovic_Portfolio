@@ -6,6 +6,7 @@ import Logo from '../../components/Logo/Logo';
 import SocialIcons from '../../components/Icons/SocialIcons';
 import PowerButton from '../../components/Buttons/PowerButton';
 import Particle from '../../components/Containers/Particle';
+import BigTitle from '../../components/Containers/BigTitle';
 
 const AboutWrapper = styled.div`
     display: flex;
@@ -79,6 +80,7 @@ export default function About() {
                 <br /> <br />
                 I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
                 </Main>
+                <BigTitle text='ABOUT ME' top='10%' left='10%' />
             </AboutWrapper>
         </ThemeProvider>
     )

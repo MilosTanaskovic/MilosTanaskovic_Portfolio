@@ -1,5 +1,7 @@
 // create svg as a React Componnents
 
+import { motion } from "framer-motion"
+
 export const PowerBtnSvg = (props) => {
     return (
       <svg
@@ -218,3 +220,24 @@ export const PowerBtnSvg = (props) => {
         </svg>
       )
   }
+
+  export const MilosLogoSvg = (props) => {
+    return (
+      <motion.svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 100 100"
+      className="item"
+    >
+      <motion.path
+        d="M0 100V0l50 50 50-50v100L75 75l-25 25-25-25z"
+        variants={props.icon}
+        initial="hidden"
+        animate="visible"
+        transition={{
+          default: { duration: 3, ease: "easeInOut" },
+          fill: { duration: 3, ease: [1, 0, 0.8, 1] }
+        }}
+      />
+    </motion.svg>
+    )
+}

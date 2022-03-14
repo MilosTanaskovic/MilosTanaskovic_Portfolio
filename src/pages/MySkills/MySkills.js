@@ -6,6 +6,7 @@ import Logo from '../../components/Logo/Logo';
 import SocialIcons from '../../components/Icons/SocialIcons';
 import PowerButton from '../../components/Buttons/PowerButton';
 import Particle from '../../components/Containers/Particle';
+import BigTitle from '../../components/Containers/BigTitle';
 
 const MySkillsWrapper = styled.div`
     display: flex;
@@ -123,6 +124,7 @@ export default function MySkills() {
                         <p>VScode, Github, Codepen etc.</p>
                     </Description>
                 </Main>
+                <BigTitle text='SKILLS' top='80%' left='30%' />
             </MySkillsWrapper>
         </ThemeProvider>
     )

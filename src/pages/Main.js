@@ -11,6 +11,7 @@ import SkillsLink from '../components/CustomLinks/SkillsLink';
 import CustomCenterButton from '../components/Buttons/CustomCenterButton';
 import DarkDiv from '../components/Containers/DarkDiv';
 import HomeIntro from '../components/Intros/HomeIntro';
+import { MilosLogo } from '../components/Logo/MilosLogo';
 
 const MainContainer = styled.div`
     background: ${props => props.theme.body};
@@ -48,6 +49,7 @@ export default function Main() {
         <DarkDiv click={click} />
             <Container>
                 <PowerButton />
+                <MilosLogo theme={click ? 'dark' : 'light'}/>
                 <Logo theme={click ? 'dark' : 'light'} />
                 <SocialIcons theme={click ? 'dark' : 'light'} />
                 <CustomCenterButton click={click} setClick={setClick} />
