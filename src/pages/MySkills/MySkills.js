@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 import { lightTheme } from '../../components/Themes'
-import { DesignSvg, DevelopeSvg } from '../../components/AllSvgs'
+import { DesignSvg, DevelopeSvg , NodeJsSvg} from '../../components/AllSvgs'
 import Logo from '../../components/Logo/Logo';
 import SocialIcons from '../../components/Icons/SocialIcons';
 import PowerButton from '../../components/Buttons/PowerButton';
@@ -9,14 +9,35 @@ import Particle from '../../components/Containers/Particle';
 import BigTitle from '../../components/Containers/BigTitle';
 
 const MySkillsWrapper = styled.div`
+    background-color: ${props => props.theme.body};
+   
+    position: relative;
+
+    
+`;
+
+const MainWrapper = styled.div`
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 2rem;
+    align-content: center; */
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center; 
+    gap: 2rem;
 
-    background-color: ${props => props.theme.body};
-    width: 100vw;
+    width: 90vw;
     height: 100vh;
-    position: relative;
+
+    padding-left: 6rem;
+    padding-right: 6rem;
+    @media (max-width: 1020px){
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+        padding: 6rem 0;
+        width: 100vw;
+    }
 `;
 
 const Main = styled.div`
@@ -27,9 +48,9 @@ const Main = styled.div`
     border: 2px solid ${props => props.theme.text};
     color: ${props => props.theme.text};
     background-color: ${props => props.theme.body};
-    padding: 2rem;
+    padding: 1rem;
     width: 30vw;
-    height: 60vh;
+    height: 70vh;
     z-index: 3;
     line-height: 1.5;
     font-family: 'Ubuntu Mono', monospace;
@@ -38,6 +59,10 @@ const Main = styled.div`
     &:hover{
         color: ${props => props.theme.body};
         background-color: ${props => props.theme.text};
+    }
+
+    @media (max-width: 1020px){
+        width: 50vw;
     }
 `;
 
@@ -86,44 +111,64 @@ export default function MySkills() {
                 <SocialIcons theme='light' />
                 <PowerButton />
                 <Particle theme='light' />
-
-                <Main>
-                    <Title>
-                        <DesignSvg width={40} height={40}/> Designer
-                    </Title>
-                    <Description>
-                        I love to create design which speaks, Keep it clean, minimal and simple.
-                    </Description>
-                    <Description>
-                        <strong>I like to Design</strong>
-                        <ul>
-                            <li>Web Design</li>
-                            <li>Mobile Apps</li>
-                        </ul>
-                    </Description>
-                    <Description>
-                        <strong>Tools</strong>
-                        <ul>
-                            <li>Figma</li>
-                        </ul>
-                    </Description>
-                </Main>
-                <Main>
-                    <Title>
-                        <DevelopeSvg width={40} height={40}/> Frontend Develoeper
-                    </Title>
-                    <Description>
-                        I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.
-                    </Description>
-                    <Description>
-                        <strong>Skills</strong>
-                        <p>Html5, Css3/Sass, JS/ES6+, TypeScript, React/Next.js, Redux/Context API/MobX, Bootstrap/Tailwind/MaterialUI, Firebase etc.</p>
-                    </Description>
-                    <Description>
-                        <strong>Tools</strong>
-                        <p>VScode, Github, Codepen etc.</p>
-                    </Description>
-                </Main>
+                <MainWrapper>
+                    <Main>
+                        <Title>
+                            <DesignSvg width={40} height={40}/> Designer
+                        </Title>
+                        <Description>
+                            I love to create design which speaks, Keep it clean, minimal and simple.
+                        </Description>
+                        <Description>
+                            <strong>I like to Design</strong>
+                            <ul>
+                                <li>Web Design</li>
+                                <li>Mobile Apps</li>
+                            </ul>
+                        </Description>
+                        <Description>
+                            <strong>Tools</strong>
+                            <ul>
+                                <li>Figma</li>
+                            </ul>
+                        </Description>
+                    </Main>
+                    <Main>
+                        <Title>
+                            <DevelopeSvg width={40} height={40}/> Frontend Developer
+                        </Title>
+                        <Description>
+                            I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.
+                        </Description>
+                        <Description>
+                            <strong>Skills</strong>
+                            <p>Html5, Css3/Sass, JS/ES6+, TypeScript, React/Next.js, Redux/Context API/MobX, Bootstrap/Tailwind/MaterialUI, Firebase etc.</p>
+                        </Description>
+                        <Description>
+                            <strong>Tools</strong>
+                            <p>VScode, Github, Codepen etc.</p>
+                        </Description>
+                    </Main>
+                
+                    <Main>
+                        <Title>
+                            <NodeJsSvg width={40} height={40} /> Full-Stack Developer
+                        </Title>
+                        <Description>
+                            I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.
+                        </Description>
+                        <Description>
+                            <strong>Skills</strong>
+                            <p>Html5, Css3/Sass, JS/ES6+, TypeScript, React/Next.js, Redux/Context API/MobX, Bootstrap/Tailwind/MaterialUI, Firebase etc.</p>
+                        </Description>
+                        <Description>
+                            <strong>Tools</strong>
+                            <p>VScode, Github, Codepen etc.</p>
+                        </Description>
+                    </Main>
+                  
+                </MainWrapper>
+                
                 <BigTitle text='SKILLS' top='80%' left='30%' />
             </MySkillsWrapper>
         </ThemeProvider>

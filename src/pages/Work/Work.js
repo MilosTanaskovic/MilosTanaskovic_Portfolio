@@ -7,7 +7,7 @@ import PowerButton from '../../components/Buttons/PowerButton';
 
 import { workData } from '../../data/WorkData';
 import Card from '../../components/Containers/Card';
-import { SaltSvg, YinYangSvg } from '../../components/AllSvgs';
+import { ReactSvg, SaltSvg, YinYangSvg } from '../../components/AllSvgs';
 import BigTitle from '../../components/Containers/BigTitle';
 import {motion} from 'framer-motion';
 
@@ -90,7 +90,8 @@ export default function Work() {
                 }
                </Main>
                 <Rotate ref={yinyang}>
-                    <YinYangSvg width={80} height={80} fill={darkTheme.text} />
+                    <ReactSvg width={80} height={80} fill={darkTheme.text} />
+                    {/* <YinYangSvg width={80} height={80} fill={darkTheme.text} /> */}
                 </Rotate>
                 <BigTitle text='WORK' top='10%' right='20%' />
             </AboutWrapper>

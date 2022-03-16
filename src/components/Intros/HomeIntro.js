@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
-import MT from '../../assets/Images/milos-t.png'
+import MT from '../../assets/Images/milos_tanaskovic.png'
 
 const HomeIntroWrapper = styled(motion.div)`
     position: absolute;
@@ -41,9 +41,14 @@ const SubBox = styled.div`
         bottom: 0;
         left: 50%;
         transform: translate(-50%, 0%);
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: -webkit-fill-available;
+        @media (max-width: 780px){
+            width: 100%;
+            height: auto;
+        }
     }
+
 `;
 
 const Text = styled.div`
@@ -53,7 +58,7 @@ const Text = styled.div`
 
     font-size: calc(1em + 1.5vw);
     color: ${props => props.theme.body};
-    padding: 2rem;
+    padding: .5rem;
     cursor: pointer;
 
     &>*:last-child {
@@ -74,7 +79,8 @@ export default function HomeIntro({click}) {
                 <Text>
                     <h1>Hi,</h1>
                     <h2>I'm Milos</h2>
-                    <h6>I Design and Code simple yet beautiful websites, e-commerce, apps</h6>
+                    <h6>Experienced Front-end React Developer eager to solve engineering problems. Passionate about creating user experience.</h6>
+                    {/*Experienced Front-end React Developer eager to solve engineering problems.*/}
                 </Text>
             </SubBox>
             <SubBox>

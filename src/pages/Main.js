@@ -54,8 +54,8 @@ export default function Main() {
                 <SocialIcons theme={click ? 'dark' : 'light'} />
                 <CustomCenterButton click={click} setClick={setClick} />
                 <ContactLink />
-                <BlogLink />
                 <WorkLink click={click} />
+                {/* <BlogLink /> */}          
                 <BottomBar>
                     <AboutLink click={click} />
                     <SkillsLink />

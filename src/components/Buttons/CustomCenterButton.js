@@ -41,7 +41,7 @@ export default function CustomCenterButton({click, setClick}) {
     const handleClick = () => setClick(!click);
     return (
         <CustomCenterButtonWrapper click={click}>
-            <SaltSvg onClick={() => handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' />
+            <SaltSvg onClick={() => handleClick()} width={click ? 80 : 200} height={click ? 80 : 200} fill='currentColor' />
             <span>click here</span>
         </CustomCenterButtonWrapper>
     )

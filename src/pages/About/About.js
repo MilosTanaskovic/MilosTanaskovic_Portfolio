@@ -2,6 +2,10 @@ import React from 'react'
 import styled, { keyframes, ThemeProvider } from 'styled-components'
 import { darkTheme } from '../../components/Themes'
 import astronaut from '../../assets/Images/spaceman.png';
+import javascript from '../../assets/Images/javascript.png';
+import react from '../../assets/Images/react.png';
+import typescript from '../../assets/Images/typescript.png';
+import nextjs from '../../assets/Images/nextjs.jpeg';
 import Logo from '../../components/Logo/Logo';
 import SocialIcons from '../../components/Icons/SocialIcons';
 import PowerButton from '../../components/Buttons/PowerButton';
@@ -41,14 +45,12 @@ const Spaceman = styled.div`
 `;
 const Main = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 
     border: 2px solid ${props => props.theme.text};
     color: ${props => props.theme.text};
     padding: 2rem;
-    width: 50vw;
-    height: 60vh;
+    width: 60vw;
     z-index: 3;
     line-height: 1.5;
     font-size: calc(0.6rem + 1vw);
@@ -60,6 +62,39 @@ const Main = styled.div`
 
     font-family: 'Ubuntu Mono', monospace;
     font-style: italic;
+
+    & img {
+        width: calc(0.6rem + 1vw);
+    }
+    & p {
+        margin-bottom: 1rem;
+    }
+    @media (max-width: 480px){
+        width: 55vw;
+        padding: 1rem;
+        height: 60vh;
+
+        overflow-y: auto;
+        /* custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #d6dee1;
+            border-radius: 20px;
+            border: 6px solid transparent;
+            background-clip: content-box;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #a8bbbf;
+        }
+    }
 `;
 
 export default function About() {
@@ -74,11 +109,20 @@ export default function About() {
                     <img src={astronaut} alt='spaceman' />
                 </Spaceman>
                 <Main>
-                I'm a front-end developer located in Stockholm, Sweden. I love to create simple yet beautiful websites with great user experience.
-                <br /> <br />
-                I'm interested in the whole frontend stack Like trying new things and building great projects. I'm an Consultant at salt and blogger. I love to write blogs and read books.
-                <br /> <br />
-                I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
+                    <p>
+                        Meticulous Front-end Web Developer with a few years of working experience in this field. I love to create simple yet beautiful apps, e-commerce platforms and websites with great user experience. I am very interested overflow design from Figma prototypes to code and also optimizing web performance and critical rendering path.
+                    </p>
+                    <p>
+                    Interested in the whole frontend stack like trying new things and building great projects. I'm an consultant at Salt. I love to write blogs and read books.
+                    </p>
+                    <p>
+                    I'm also very eager to improve, both personally and professionally.
+                    My leadership and organizational skills, as well as technological expertise will ensure successful and timely completion of your company's products. 📈🧲
+                    </p>  
+                    <p>
+                    I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
+                    </p>
+                    <span>Let's create together! 🚀</span>    
                 </Main>
                 <BigTitle text='ABOUT ME' top='10%' left='10%' />
             </AboutWrapper>
