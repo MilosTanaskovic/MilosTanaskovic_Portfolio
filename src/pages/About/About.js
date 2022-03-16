@@ -110,7 +110,7 @@ export default function About() {
                 </Spaceman>
                 <Main>
                     <p>
-                        Meticulous Front-end Web Developer with a few years of working experience in this field. I love to create simple yet beautiful apps, e-commerce platforms and websites with great user experience. I am very interested overflow design from Figma prototypes to code and also optimizing web performance and critical rendering path.
+                        Meticulous Front-end Web Developer with a few years of working experience in this field. I love to create simple yet beautiful apps, e-commerce platforms and websites with great user experience. I am very interested overflow UI from Figma design prototypes to React components and also optimizing web performance and critical rendering path.
                     </p>
                     <p>
                     Interested in the whole frontend stack like trying new things and building great projects. I'm an consultant at Salt. I love to write blogs and read books.
