@@ -58,13 +58,13 @@ const container = {
 }
 export default function Work() {
     const ref = useRef(null);
-    const yinyang = useRef(null)
+    const reactlogo = useRef(null)
     useEffect(() => {
        let element = ref.current;
 
        const rotate = () => {
            element.style.transform = `translateX(${-window.pageYOffset}px)`
-           yinyang.current.style.transform = 'rotate(' + -window.pageYOffset + 'deg)'
+           reactlogo.current.style.transform = 'rotate(' + -window.pageYOffset + 'deg)'
        }
 
        window.addEventListener('scroll', rotate)
@@ -89,7 +89,7 @@ export default function Work() {
                 
                 }
                </Main>
-                <Rotate ref={yinyang}>
+                <Rotate ref={reactlogo}>
                     <ReactSvg width={80} height={80} fill={darkTheme.text} />
                     {/* <YinYangSvg width={80} height={80} fill={darkTheme.text} /> */}
                 </Rotate>

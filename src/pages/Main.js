@@ -54,11 +54,11 @@ export default function Main() {
                 <SocialIcons theme={click ? 'dark' : 'light'} />
                 <CustomCenterButton click={click} setClick={setClick} />
                 <ContactLink />
-                <WorkLink click={click} />
-                {/* <BlogLink /> */}          
+                <AboutLink click={click} />
+                <SkillsLink />          
                 <BottomBar>
-                    <AboutLink click={click} />
-                    <SkillsLink />
+                    <WorkLink click={click} />
+                    <BlogLink />
                 </BottomBar>
             </Container>
             {click ? <HomeIntro click={click} /> : null}

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { GithubSvg } from '../AllSvgs';
 
 const CardWrapper = styled(motion.li)`
-    width: 16rem;
+    width: 20rem;
     height: 40vh;
     background-color: ${props => props.theme.text};
     color: ${props => props.theme.body};
@@ -29,6 +29,20 @@ const CardWrapper = styled(motion.li)`
 
 const Title = styled.h2`
     font-size: calc(1rem + 0.5vw);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    & span {
+        background-color:#F8463F; 
+        font-family: 'Patua One', cursive;
+        color:#fff;
+        text-align: center;
+        border-radius: 0 20px 0 0;
+        padding: 0 .5rem;
+    }
 `;
 
 const Description = styled.h2`
@@ -97,10 +111,13 @@ const Item = {
     }
 }
 export default function Card({data}) {
-    const {id, name, description, tags, demo, github} = data;
+    const {id, name, description, tags, demo, github, ribbon} = data;
     return (
-        <CardWrapper key={id} variants={Item}>
-            <Title>{name}</Title>
+        <CardWrapper key={id} variants={Item}>      
+            <Title>
+                {name}
+                <span>{ribbon}</span>
+            </Title>
             <Description>{description}</Description>
             <Tags>
                 {

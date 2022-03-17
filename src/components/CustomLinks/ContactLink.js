@@ -14,7 +14,7 @@ const ContactLinkWrapper = styled(NavLink)`
 
 export default function ContactLink() {
     return (
-        <ContactLinkWrapper target='_blank' to={{pathname:'mailto:milos@tanaskovic.se'}}>
+        <ContactLinkWrapper target='_blank' to={{pathname:'mailto:milostanaskovic.dev.data@gmail.com'}}>
             <motion.h2
                 whileHover={{scale:1.1}}
                 whileTap={{scale:0.9}}
