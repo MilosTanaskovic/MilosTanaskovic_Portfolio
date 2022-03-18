@@ -1,14 +1,14 @@
 import React, {useRef, useEffect} from 'react'
 import styled, { ThemeProvider } from 'styled-components'
-import { darkTheme } from '../../components/Themes'
-import Logo from '../../components/Logo/Logo';
-import SocialIcons from '../../components/Icons/SocialIcons';
-import PowerButton from '../../components/Buttons/PowerButton';
+import { darkTheme } from '../../../components/Themes'
+import Logo from '../../../components/Logo/Logo';
+import SocialIcons from '../../../components/Icons/SocialIcons';
+import PowerButton from '../../../components/Buttons/PowerButton';
 
-import { frontendData } from '../../data/WorkData';
-import Card from '../../components/Containers/Card';
-import { ReactSvg, SaltSvg, YinYangSvg } from '../../components/AllSvgs';
-import BigTitle from '../../components/Containers/BigTitle';
+import { designData, frontendData } from '../../../data/WorkData';
+import Card from '../../../components/Containers/Card';
+import { FigmaSvg } from '../../../components/AllSvgs';
+import BigTitle from '../../../components/Containers/BigTitle';
 import {motion} from 'framer-motion';
 
 const AboutWrapper = styled.div`
@@ -58,13 +58,13 @@ const container = {
 }
 export default function Work() {
     const ref = useRef(null);
-    const reactlogo = useRef(null)
+    const figmalogo = useRef(null)
     useEffect(() => {
        let element = ref.current;
 
        const rotate = () => {
            element.style.transform = `translateX(${-window.pageYOffset}px)`
-           reactlogo.current.style.transform = 'rotate(' + -window.pageYOffset + 'deg)'
+           figmalogo.current.style.transform = 'rotate(' + -window.pageYOffset + 'deg)'
        }
 
        window.addEventListener('scroll', rotate)
@@ -80,7 +80,7 @@ export default function Work() {
                 <PowerButton />
                 <Main ref={ref} variants={container} initial='hidden' animate='show'>
                 {
-                    frontendData.map( item => {
+                    designData.map( item => {
                         
                         return(
                             <Card key={item.id} data={item} />
@@ -89,11 +89,10 @@ export default function Work() {
                 
                 }
                 </Main>
-                <Rotate ref={reactlogo}>
-                    <ReactSvg width={80} height={80} fill={darkTheme.text} />
-                    {/* <YinYangSvg width={80} height={80} fill={darkTheme.text} /> */}
+                <Rotate ref={figmalogo}>
+                    <FigmaSvg width={80} height={80} fill={darkTheme.text} />
                 </Rotate>
-                <BigTitle text='WORK' top='10%' right='20%' />
+                <BigTitle text='DESIGN' top='10%' right='20%' />
             </AboutWrapper>
         </ThemeProvider>
     )

@@ -24,6 +24,11 @@ const Line = styled.span`
     width: 2px;
     height: 8rem;
     background-color: ${props => props.color === 'dark' ? darkTheme.text : darkTheme.body};
+
+    @media (max-width: 600px){
+        height: 5rem;
+        background-color: inherit;
+    }
 `;
 
 export default function SocialIcons(props) {

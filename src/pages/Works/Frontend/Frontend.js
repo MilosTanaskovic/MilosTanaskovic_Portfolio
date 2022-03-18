@@ -1,14 +1,14 @@
 import React, {useRef, useEffect} from 'react'
 import styled, { ThemeProvider } from 'styled-components'
-import { darkTheme } from '../../components/Themes'
-import Logo from '../../components/Logo/Logo';
-import SocialIcons from '../../components/Icons/SocialIcons';
-import PowerButton from '../../components/Buttons/PowerButton';
+import { darkTheme } from '../../../components/Themes'
+import Logo from '../../../components/Logo/Logo';
+import SocialIcons from '../../../components/Icons/SocialIcons';
+import PowerButton from '../../../components/Buttons/PowerButton';
 
-import { frontendData } from '../../data/WorkData';
-import Card from '../../components/Containers/Card';
-import { ReactSvg, SaltSvg, YinYangSvg } from '../../components/AllSvgs';
-import BigTitle from '../../components/Containers/BigTitle';
+import { frontendData } from '../../../data/WorkData';
+import Card from '../../../components/Containers/Card';
+import { ReactSvg, SaltSvg, YinYangSvg } from '../../../components/AllSvgs';
+import BigTitle from '../../../components/Containers/BigTitle';
 import {motion} from 'framer-motion';
 
 const AboutWrapper = styled.div`
@@ -93,7 +93,7 @@ export default function Work() {
                     <ReactSvg width={80} height={80} fill={darkTheme.text} />
                     {/* <YinYangSvg width={80} height={80} fill={darkTheme.text} /> */}
                 </Rotate>
-                <BigTitle text='WORK' top='10%' right='20%' />
+                <BigTitle text='FRONTEND' top='10%' right='20%' />
             </AboutWrapper>
         </ThemeProvider>
     )

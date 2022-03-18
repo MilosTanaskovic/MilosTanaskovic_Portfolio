@@ -1,5 +1,20 @@
-// work data
-export const workData = [
+// design data
+export const designData = [
+    {
+        id:1,
+        name:"Modern Music App",
+        description:"Web Programming - Modern-Slick Music App, Web Design, BEM, Styled-Components, JSON, React.js, Props Drilling",
+        tags:["react","BEM","styledComponents"],
+        
+        demo:"https://modern-slick-react-app.netlify.app/",
+        github:"https://github.com/MilosTanaskovic/modern-music-app",
+
+        ribbon:"React",
+    },
+] 
+
+// frontend data
+export const frontendData = [
     {
         id:1,
         name:"Modern Music App",
@@ -80,53 +95,68 @@ export const workData = [
         ribbon:"React",
         
     },
-    {
-        id:8,
-        name:"Slider Landing Page",
-        description:"Web Programming - React Slider Landingpage - CSS3, React.js, Props, Hooks, Function Components, Custom API, Style-Icons",
-        tags:["react", "customAPI", "props","hooks", "css3"],
+    // {
+    //     id:8,
+    //     name:"Slider Landing Page",
+    //     description:"Web Programming - React Slider Landingpage - CSS3, React.js, Props, Hooks, Function Components, Custom API, Style-Icons",
+    //     tags:["react", "customAPI", "props","hooks", "css3"],
         
-        demo:"https://slider-landingpage-reactjs.netlify.app/",
-        github:"https://github.com/MilosTanaskovic/react-projects-challanges/tree/master/7-slider",
+    //     demo:"https://slider-landingpage-reactjs.netlify.app/",
+    //     github:"https://github.com/MilosTanaskovic/react-projects-challanges/tree/master/7-slider",
 
-        ribbon:"React",
+    //     ribbon:"React",
         
-    },
-    {
-        id:9,
-        name:"Reviews Landing Page",
-        description:"Web Programming - React Reviews Landingpage - CSS3, React.js, Props, Style-Icons, Images",
-        tags:["react","props","hooks", "css3", "image"],    
-        demo:"https://reviews-landingpag-reactjs.netlify.app/",
-        github:"https://github.com/MilosTanaskovic/react-projects-challanges/tree/master/3-reviews",
+    // },
+    // {
+    //     id:9,
+    //     name:"Reviews Landing Page",
+    //     description:"Web Programming - React Reviews Landingpage - CSS3, React.js, Props, Style-Icons, Images",
+    //     tags:["react","props","hooks", "css3", "image"],    
+    //     demo:"https://reviews-landingpag-reactjs.netlify.app/",
+    //     github:"https://github.com/MilosTanaskovic/react-projects-challanges/tree/master/3-reviews",
 
-        ribbon:"React",
+    //     ribbon:"React",
         
-    },
-    {
-        id:10,
-        name:"Framer-Motion Landing Page",
-        description:"Web Programming - Framer Motion AnimateSharedLayout - Framer API, Framer Motion Animation",
-        tags:["react", "framerAPI","framerMotionAnimation", "animation"],
+    // },
+    // {
+    //     id:10,
+    //     name:"Framer-Motion Landing Page",
+    //     description:"Web Programming - Framer Motion AnimateSharedLayout - Framer API, Framer Motion Animation",
+    //     tags:["react", "framerAPI","framerMotionAnimation", "animation"],
         
-        demo:"https://framer-motion-animatesharedlayout.netlify.app/",
-        github:"https://github.com/MilosTanaskovic/AnimateSharedLayout-FramerMotion-React/tree/master/syncing-layout-animations",
+    //     demo:"https://framer-motion-animatesharedlayout.netlify.app/",
+    //     github:"https://github.com/MilosTanaskovic/AnimateSharedLayout-FramerMotion-React/tree/master/syncing-layout-animations",
 
-        ribbon:"Framer-Motion",
+    //     ribbon:"Framer-Motion",
         
-    },
-    {
-        id:11,
-        name:"Accordion Landing Page",
-        description:"Web Programming - React Accordion Landingpage - CSS3, React.js, Props, Hooks, Function Components, Style-Icons",
-        tags:["react","props","hooks", "css3"],
+    // },
+    // {
+    //     id:11,
+    //     name:"Accordion Landing Page",
+    //     description:"Web Programming - React Accordion Landingpage - CSS3, React.js, Props, Hooks, Function Components, Style-Icons",
+    //     tags:["react","props","hooks", "css3"],
         
-        demo:"https://accordion-landingpage-reactjs.netlify.app/",
-        github:"https://github.com/MilosTanaskovic/react-projects-challanges/tree/master/4-accordion",
+    //     demo:"https://accordion-landingpage-reactjs.netlify.app/",
+    //     github:"https://github.com/MilosTanaskovic/react-projects-challanges/tree/master/4-accordion",
 
-        ribbon:"React",
+    //     ribbon:"React",
         
-    },
+    // },
     
   
+] 
+
+// fullstack data
+export const fullstackData = [
+    {
+        id:1,
+        name:"Modern Music App",
+        description:"Web Programming - Modern-Slick Music App, Web Design, BEM, Styled-Components, JSON, React.js, Props Drilling",
+        tags:["react","BEM","styledComponents"],
+        
+        demo:"https://modern-slick-react-app.netlify.app/",
+        github:"https://github.com/MilosTanaskovic/modern-music-app",
+
+        ribbon:"React",
+    },
 ] 

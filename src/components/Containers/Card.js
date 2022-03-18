@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { GithubSvg } from '../AllSvgs';
 
 const CardWrapper = styled(motion.li)`
-    width: 20rem;
+    width: 16rem;
     height: 40vh;
     background-color: ${props => props.theme.text};
     color: ${props => props.theme.body};
@@ -87,7 +87,8 @@ const Link = styled(NavLink)`
 `;
 
 const Git = styled(NavLink)`
-    color: inherit;
+    /* color: inherit; */
+    color: ${props => props.click ? props.theme.body : props.theme.text};
     text-decoration: none;
     ${CardWrapper}:hover &{
         &>*{

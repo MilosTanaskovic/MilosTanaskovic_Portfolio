@@ -12,6 +12,9 @@ import CustomCenterButton from '../components/Buttons/CustomCenterButton';
 import DarkDiv from '../components/Containers/DarkDiv';
 import HomeIntro from '../components/Intros/HomeIntro';
 import { MilosLogo } from '../components/Logo/MilosLogo';
+import DesignLink from '../components/CustomLinks/work/Design';
+import FrontendLink from '../components/CustomLinks/work/Frontend';
+import FullStackLink from '../components/CustomLinks/work/FullStack';
 
 const MainContainer = styled.div`
     background: ${props => props.theme.body};
@@ -57,8 +60,11 @@ export default function Main() {
                 <AboutLink click={click} />
                 <SkillsLink />          
                 <BottomBar>
-                    <WorkLink click={click} />
-                    <BlogLink />
+                    {/* <WorkLink click={click} /> */}
+                    <DesignLink click={click} />
+                    <FrontendLink click={click}/>
+                    <FullStackLink />
+                    {/* <BlogLink /> */}
                 </BottomBar>
             </Container>
             {click ? <HomeIntro click={click} /> : null}
