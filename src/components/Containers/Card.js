@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import { GithubSvg } from '../AllSvgs';
+import { FigmaSvg, GithubSvg } from '../AllSvgs';
 
 const CardWrapper = styled(motion.li)`
     width: 16rem;
@@ -86,7 +86,7 @@ const Link = styled(NavLink)`
     }
 `;
 
-const Git = styled(NavLink)`
+const Icons = styled(NavLink)`
     /* color: inherit; */
     color: ${props => props.click ? props.theme.body : props.theme.text};
     text-decoration: none;
@@ -112,7 +112,8 @@ const Item = {
     }
 }
 export default function Card({data}) {
-    const {id, name, description, tags, demo, github, ribbon} = data;
+    const {id, name, description, tags, demo, github, figma, ribbon} = data;
+    console.log(data);
     return (
         <CardWrapper key={id} variants={Item}>      
             <Title>
@@ -131,9 +132,16 @@ export default function Card({data}) {
                 <Link to={{pathname: `${demo}`}} target='_blank'>
                     Visit
                 </Link>
-                <Git to={{pathname: `${github}`}} target='_blank'>
-                    <GithubSvg width={30} height={30} />
-                </Git>
+                { figma && (
+                    <Icons to={{pathname: `${figma}`}} target='_blank'>
+                        <FigmaSvg width={30} height={30} />
+                    </Icons>
+                )}
+                { github && (
+                    <Icons to={{pathname: `${github}`}} target='_blank'>
+                        <GithubSvg width={30} height={30} />
+                    </Icons>
+                )}
             </Footer>
         </CardWrapper>
     )

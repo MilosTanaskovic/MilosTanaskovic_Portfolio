@@ -288,7 +288,7 @@ export default function MySkills() {
                             <NodeJsSvg width={40} height={40} /> Full-Stack Development
                         </Title>
                         <Description>
-                            
+                            Intensive three month training program for full stack web development with a focus on TDD, JS, Node, mob programming, and applied learning.
                         </Description>
                         <Description>
                             <strong>Skills</strong>

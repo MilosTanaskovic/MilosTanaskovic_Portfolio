@@ -2,14 +2,51 @@
 export const designData = [
     {
         id:1,
-        name:"Modern Music App",
-        description:"Web Programming - Modern-Slick Music App, Web Design, BEM, Styled-Components, JSON, React.js, Props Drilling",
-        tags:["react","BEM","styledComponents"],
+        name:"Automotive Car",
+        description:"UI and Web Design for modern Automotive Car landing page using Figma for design and HTML5/CSS3.",
+        tags:["ui","design","figma", "landingpage", "flexbox", "grid", "fontawesome", "seo"],
         
-        demo:"https://modern-slick-react-app.netlify.app/",
-        github:"https://github.com/MilosTanaskovic/modern-music-app",
+        demo:"https://friendly-kalam-cefe73.netlify.app/",
+        github:"https://github.com/MilosTanaskovic/Build-Responsive-Landing-Page-with-HTML5-CSS3/tree/master/automotive-car-design/car",
+        figma:"https://www.figma.com/file/zppYSMP6dUEUh3SBp6FPOg/Untitled?node-id=1%3A2",
 
-        ribbon:"React",
+        ribbon:"UI/Design",
+    },
+    {
+        id:2,
+        name:"Fashion Clothes",
+        description:"UI and Web Design for modern Fashion Clothes landing page using Figma for design and HTML5/CSS3.",
+        tags:["ui","design","figma", "landingpage", "httml", "css"],
+        
+        demo:"https://www.figma.com/file/zppYSMP6dUEUh3SBp6FPOg/Untitled?node-id=3%3A2",
+        github:"https://github.com/MilosTanaskovic/Build-Responsive-Landing-Page-with-HTML5-CSS3/tree/master/Fashion%20Clothes%20Design",
+        figma:"https://www.figma.com/file/zppYSMP6dUEUh3SBp6FPOg/Untitled?node-id=9%3A0",
+
+        ribbon:"UI/Design",
+    },
+    {
+        id:3,
+        name:"Restaurant Food",
+        description:"UI and Web Design for modern Restaurant Food landing page using Figma for design and HTML5/CSS3.",
+        tags:["ui","design","figma", "landingpage", "httml", "css", "flexbox", "fontawesome", "seo"],
+        
+        demo:"https://restaurant-landingpage.netlify.app/",
+        github:"https://github.com/MilosTanaskovic/Build-Responsive-Landing-Page-with-HTML5-CSS3/tree/master/Restaurant-design/site",
+        figma:"https://www.figma.com/file/zppYSMP6dUEUh3SBp6FPOg/Untitled?node-id=3%3A2",
+
+        ribbon:"UI/Design",
+    },
+    {
+        id:4,
+        name:"Shoes Footwear",
+        description:"UI and Web Design for modern Shoes Footwear landing page using Figma for design and HTML5/CSS3.",
+        tags:["ui","design","figma", "landingpage", "httml", "css", "flexbox", "fontawesome", "seo", "js", "es6"],
+        
+        demo:"https://shoes-landingpage.netlify.app/",
+        github:"https://github.com/MilosTanaskovic/Build-Responsive-Landing-Page-with-HTML5-CSS3/tree/master/Shoes%20Design%20-%20Figma/site",
+        figma:"https://www.figma.com/file/zppYSMP6dUEUh3SBp6FPOg/Untitled?node-id=6%3A3",
+
+        ribbon:"UI/Design",
     },
 ] 
 
@@ -150,13 +187,24 @@ export const frontendData = [
 export const fullstackData = [
     {
         id:1,
-        name:"Modern Music App",
-        description:"Web Programming - Modern-Slick Music App, Web Design, BEM, Styled-Components, JSON, React.js, Props Drilling",
-        tags:["react","BEM","styledComponents"],
+        name:"Personal Blog",
+        description:"Full-Stack project finished in one day as part of Salt Bootcamp. The project is written using modern JavaScript (Frontend and Backend) technologies in the middle of the course.",
+        tags:["node","express","react", "hooks", "redux", "mongodb", "restapi", "crud"],
         
-        demo:"https://modern-slick-react-app.netlify.app/",
-        github:"https://github.com/MilosTanaskovic/modern-music-app",
+        demo:"https://github.com/MilosTanaskovic/blogfullstackapp",
+        github:"https://github.com/MilosTanaskovic/blogfullstackapp",
 
-        ribbon:"React",
+        ribbon:"Node",
+    },
+    {
+        id:2,
+        name:"Metanet marketplace",
+        description:"Metanet is a marketplace for metaverse properties. It was created as the final project of the SALT bootcamp fall -21. This MVP currently supports parcels from the cryptovoxels metaverse.",
+        tags:["ux","ui", "figma-design","node","express","react", "hooks", "mongodb", "restapi", "graphql"],
+        
+        demo:"https://metanet-rjms.herokuapp.com",
+        github:"https://github.com/Metanet-RJMS/metanet",
+
+        ribbon:"Node",
     },
 ] 
